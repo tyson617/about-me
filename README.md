@@ -14,7 +14,7 @@ The purpose of this project is for the author to practice basic HTML, CSS, and J
 
 ### Lighthouse Accessibility Report Score
 
-* ![](/Users/lysetteiannucci/Desktop/Tyson/Code Fellows 201/Class 02/Screenshot 2023-09-24 at 3.53.08 PM.png)
+* <img width="1440" alt="Screenshot 2023-09-24 at 3 53 08 PM" src="https://github.com/tyson617/about-me/assets/130862081/9d048cc0-a20f-48d7-9844-6abf3575004f">
 
 ### Reflections and Comments
 
