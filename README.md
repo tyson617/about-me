@@ -1,11 +1,11 @@
 # about-me
 # LAB - 02
 
-## Project Name
+## About Me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+The purpose of this project is for the author to practice basic HTML, CSS, and JavaScript, with the content centered around an autobiography.
 
-### Author: Tyson Fernstrom
+### Author: Tyson F.
 
 ### Links and Resources
 
@@ -14,7 +14,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Lighthouse Accessibility Report Score
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
+* ![](/Users/lysetteiannucci/Desktop/Tyson/Code Fellows 201/Class 02/Screenshot 2023-09-24 at 3.53.08 PM.png)
 
 ### Reflections and Comments
 
