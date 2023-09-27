@@ -1,4 +1,3 @@
-# about-me
 # LAB - 02
 
 ## About Me
@@ -10,7 +9,6 @@ The purpose of this project is for the author to practice basic HTML, CSS, and J
 ### Links and Resources
 
 * [submission PR](http://xyz.com)
-* Any Links you used as reference
 
 ### Lighthouse Accessibility Report Score
 
@@ -18,5 +16,4 @@ The purpose of this project is for the author to practice basic HTML, CSS, and J
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+
