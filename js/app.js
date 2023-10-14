@@ -94,8 +94,23 @@ let questionSevenRemainingGuesses = questionSevenAllowedGuesses;
 for(let i=0; i < questionSevenAllowedGuesses; i++){
   let questionSevenGuess = prompt(`Can you guess what animals I had as a kid? You have ${questionSevenRemainingGuesses} attempts left!`);
 
-  if(questionSevenAnswers.includes(questionSevenGuess)){
-    alert(`You are correct! ${questionSevenGuess} is one of the correct answers! The other correct answers were ${questionSevenAnswers - questionSevenGuess}.`);
+  if (questionSevenAnswers.includes(questionSevenGuess)) {
+    let index = questionSevenAnswers.indexOf(questionSevenGuess);
+
+    let remainingAnswersString = '';
+
+    for (let i = 0; i < questionSevenAnswers.length; i++) {
+      if (i !== index) {
+        remainingAnswersString += questionSevenAnswers[i];
+        if (i < questionSevenAnswers.length - 2) {
+          remainingAnswersString += ' , ';
+        } else if (i === questionSevenAnswers.length - 2) {
+          remainingAnswersString += ' and ';
+        }
+      }
+    }
+    alert(`You are correct! ${questionSevenGuess} is one of the correct answers! The other correct answers are: ${remainingAnswersString}.`);
+
     correctAnswerTotal++;
     break;
   } else {
