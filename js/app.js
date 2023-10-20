@@ -87,40 +87,43 @@ if (questionSixRemainingGuesses === 0) {
   alert(`Sorry, you've used all your attempts. The correct answer is ${favoriteNumber}.`);
 }
 
-let questionSevenAnswers = ['dog','rat','bunny'];
-let questionSevenAllowedGuesses = 6;
-let questionSevenRemainingGuesses = questionSevenAllowedGuesses;
+function questionSevenGuess() {
+  let questionSevenAnswers = ['dog','rat','bunny'];
+  let questionSevenAllowedGuesses = 6;
+  let questionSevenRemainingGuesses = questionSevenAllowedGuesses;
 
-for(let i=0; i < questionSevenAllowedGuesses; i++){
-  let questionSevenGuess = prompt(`Can you guess what animals I had as a kid? You have ${questionSevenRemainingGuesses} attempts left!`);
+  for(let i=0; i < questionSevenAllowedGuesses; i++){
+    let questionSevenGuess = prompt(`Can you guess what animals I had as a kid? You have ${questionSevenRemainingGuesses} attempts left!`);
 
-  if (questionSevenAnswers.includes(questionSevenGuess)) {
-    let index = questionSevenAnswers.indexOf(questionSevenGuess);
+    if (questionSevenAnswers.includes(questionSevenGuess)) {
+      let index = questionSevenAnswers.indexOf(questionSevenGuess);
 
-    let remainingAnswersString = '';
+      let remainingAnswersString = '';
 
-    for (let i = 0; i < questionSevenAnswers.length; i++) {
-      if (i !== index) {
-        remainingAnswersString += questionSevenAnswers[i];
-        if (i < questionSevenAnswers.length - 2) {
-          remainingAnswersString += ' , ';
-        } else if (i === questionSevenAnswers.length - 2) {
-          remainingAnswersString += ' and ';
+      for (let i = 0; i < questionSevenAnswers.length; i++) {
+        if (i !== index) {
+          remainingAnswersString += questionSevenAnswers[i];
+          if (i < questionSevenAnswers.length - 2) {
+            remainingAnswersString += ' , ';
+          } else if (i === questionSevenAnswers.length - 2) {
+            remainingAnswersString += ' and ';
+          }
         }
       }
+      alert(`You are correct! ${questionSevenGuess} is one of the correct answers! The other correct answers are: ${remainingAnswersString}.`);
+
+      correctAnswerTotal++;
+      break;
+    } else {
+      alert('Incorrect, try again!');
     }
-    alert(`You are correct! ${questionSevenGuess} is one of the correct answers! The other correct answers are: ${remainingAnswersString}.`);
-
-    correctAnswerTotal++;
-    break;
-  } else {
-    alert('Incorrect, try again!');
+    questionSevenRemainingGuesses--;
   }
-  questionSevenRemainingGuesses--;
-}
 
-if(questionSevenRemainingGuesses === 0){
-  alert(`Sorry, you've used all your attempts. The correct answers are ${questionSevenAnswers}.`);
-}
+  if(questionSevenRemainingGuesses === 0){
+    alert(`Sorry, you've used all your attempts. The correct answers are ${questionSevenAnswers}.`);
+  }
 
-alert(`You got ${correctAnswerTotal} out of 7 questions correct!`);
+  alert(`You got ${correctAnswerTotal} out of 7 questions correct!`);
+}
+questionSevenGuess();
