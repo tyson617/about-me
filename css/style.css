@@ -1,80 +1,70 @@
-/* Reset styles */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Apply a background color to the entire page */
+
 body {
-  background-color: #f2f2f2; /* Light gray background */
+  background-color: #f2f2f2;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Header styles */
+
 header {
-  background-color: #336699; /* Dark blue header background */
-  color: #ffffff; /* White text */
+  background-color: #336699;
+  color: #ffffff;
   text-align: center;
   padding: 20px;
   font-size: 24px;
 }
 
-/* Main content container */
+
 main {
-  max-width: 800px; /* Set a maximum width for the content */
-  margin: 20px auto; /* Center the content horizontally */
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
-  background-color: #ffffff; /* White background */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Headings */
+
 h1, h2 {
-  color: #336699; /* Dark blue headings */
+  color: #336699;
 }
 
-/* Paragraph text */
+
 p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
-/* Lists */
+
 ul, ol {
   padding-left: 20px;
   margin-bottom: 20px;
 }
 
-/* Footer styles */
+
 footer {
-  background-color: #336699; /* Dark blue footer background */
-  color: #ffffff; /* White text */
+  background-color: #336699;
+  color: #ffffff;
   text-align: center;
   padding: 10px;
   font-size: 16px;
 }
 
-/* Top Ten Places to Travel section */
+
 .travelDiv {
-  background-color: #f9f9f9; /* Light gray background for the travel section */
+  background-color: #f9f9f9;
   padding: 20px;
-  border: 1px solid #ccc; /* Add a border to the section */
+  border: 1px solid #ccc;
 }
 
-/* Apply additional styles to list items */
+
 li {
   list-style-type: square;
-}
-
-/* Links (if needed) */
-a {
-  color: #336699; /* Dark blue link color */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline; /* Underline links on hover */
 }
